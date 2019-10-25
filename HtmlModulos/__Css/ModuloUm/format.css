@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial , sans-serif;
+    background-color: rgb(232, 236, 232);
+}
+
+div.ParteCima{
+    background: rgb(113, 124, 124);
+    width: 100%;
+}
+img#banner{
+    width: 100%;
+}
+
+h2.TitleSec{
+    color: blue;
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    text-align: center;
+}
+div.beneficios{
+    background-color: #ffffff;
+}
+div h3{
+    text-align: center;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15% ;
+}
+
+li.Lista{
+    font-style: italic;
+    vertical-align: top;
+}
+div img.FotoBaixo{
+    width: 50%;
+}
