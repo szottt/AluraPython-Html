@@ -1,40 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
     <title>BarbeariaAlura</title>
-    <link rel="stylesheet" href="/__Css/ModuloUm/format.css"/>
+
+    <link rel="stylesheet" href="/__Css/reset.css"/>
+    <link rel="stylesheet" href="/__Css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 <body>
-        <h1>Barbearia Alura</h1>
-            <img id="banner" src="/__Images/ModuloUm/banner.jpg">
-        <div class="ParteCima">
-            <h2 class="TitleSec">Sobre a Barbearia Alura</h2>
+        <header>
+                <div class="caixa">
+                    <h1><img src="/__Images/ModuloDois/logo.png" alt="Logo da Barvearia Alura" ></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="/__ArquivoBase/ModuloUm/index.html">Home</a></li>
+                            <li><a href="/__ArquivoBase/ModuloDois/produtos.html">Produtos</a></li>
+                            <li><a href="/__ArquivoBase/Contato.html">Contato</a></li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+        </header>
 
-            <p>Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+        <img class="Banner" src="/__Images/ModuloUm/banner.jpg">
+        
+        <main>
+            <section class="Principal">
+                <h2 class="TitlePrincipal">Sobre a Barbearia Alura</h2>
+
+                <img class="Utensilios" src="/__Images/utensilios.jpg" alt="Utensilios de um barbeiro"/>
             
-            <p>Nossa missão é: <span style="color: red;">"Proporcionar auto-estima e qualidade de vida aos lientes"</span>.</p>
-            
-            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-        </div>
-
-        <div class="beneficios">
-            <h3>Beneficios</h3>
-
-            <ul>
-                <li class="Lista">Atendimento </li>
-                <li class="Lista">Valor </li>
-                <li class="Lista">Local descontraido</li>
-                <li class="Lista">Bebidas</li>
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia     Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
                 
-            </ul>
+                <p class="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes" </strong>.</em></p>
+                
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo     qualidade e satisfação dos nossos clientes.</p>
 
-            <img src="/__Images/ModuloUm/beneficios.jpg" class="FotoBaixo"/>
+            </section>
 
-        </div>
+            <section class="mapa">
+                <h3 class="TitlePrincipal"> Onde estamos</h3>
+                <p>Nosso estabelecimento fica localizado no coração da cidade.</p>
+                
+                <div class="MapaConteudo">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1826.5227213383523!2d-46.4127334943352!3d-23.710071198632946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6cefb8e27b97%3A0xe81220d74a8cca37!2sAv.%20Fortuna%2C%2082-214%20-%20Centro%2C%20Ribeir%C3%A3o%20Pires%20-%20SP%2C%2009400-320!5e0!3m2!1spt-BR!2sbr!4v1572719778638!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
+
+            </section>
+        
+            <section class="beneficios">
+                <h3 class="TitlePrincipal">Beneficios</h3>
+                
+            <div class="ConteudoBeneficios">
+
+                <ul class="ListaBeneficios">
+                    <li class="Itens">Atendimento ao Cliente </li>
+                    <li class="Itens">Espaço Diferenciado </li>
+                    <li class="Itens">Localizção</li>
+                    <li class="Itens">Profissionais Qualificados</li>
+                    <li class="Itens">Pontualidade</li>
+                    <li class="Itens">Limpeza</li>
+                </ul><img src="/__Images/ModuloUm/beneficios.jpg" class="FotoBeneficio"/>
+
+            </div>
+
+                <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div>
+            </section>
+            </main>
+        <footer>
+                <img src="/__Images/ModuloDois/logo-branco.png" alt="Logo da Barbearia ALura">
+                <p class="Copyright">&copy; Copyright Barbearia do Igor 2019</p>
+        </footer>
 
 </body>
 </html>

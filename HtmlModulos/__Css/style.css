@@ -1,0 +1,242 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background: #bbbbbb ;
+    padding: 20px 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+ul.Produtos{
+    width: 50%;
+    margin: 15px auto;
+}
+ul.Produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 50px 0;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+ul.Produtos li:hover{
+    border-color: #c78c19;
+    
+}
+ul.Produtos li:active{
+    border-color: #088c19;
+}
+ul.Produtos li:hover h2{
+    font-size: 25px;
+}
+ul.Produtos H2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Descricao{
+    font-size: 18px;
+}
+
+p.Preco{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: rgb(34, 34, 34);
+    padding: 40px 0;
+}
+
+p.Copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: auto;
+}
+
+
+
+form{
+    margin: 40px 0;
+    padding: 0 0 0 25%;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.InputPadrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.Enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.Enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+    /*transform: rotate(70deg);*/    
+}
+
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Css da pagina Inicial*/
+.Banner{
+    width: 100%;
+}
+.TitlePrincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.TitlePrincipal::first-letter{
+    font-weight: bold;
+}
+.Principal{
+    padding: 3em 0;
+    background-color: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+.Principal p{
+    margin: 0 0 1em;
+}
+
+.Principal strong{
+    font-weight: bold;
+}
+
+.Principal em{
+    font-style: italic;
+}
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888) ;
+}
+.MapaConteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.beneficios{
+    padding: 3em 0;
+    background-color: #888888;
+}
+.Utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+    opacity: 1;
+    transition: 1s;
+}
+.Utensilios:hover{
+    opacity: 0.5;
+}
+.ConteudoBeneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+.ListaBeneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.Itens{
+    line-height: 1.5;
+}
+.Itens:first-child{
+    font-weight: bold;
+}
+.Itens:before{
+    content: "★";
+}
+.FotoBeneficio{
+    width: 60%;
+    opacity: 1;
+    transition: 1s;
+    /*box-shadow: 10px 10px 25px #000000, -10px 10px rgba(255,0,0,50);*/
+    box-shadow: 10px 10px 25px #000000;
+}
+.FotoBeneficio:hover{
+    opacity: 0.5;
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, .Principal, .mapa, .beneficios, .video {
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .ListaBeneficios, .FotoBeneficio{
+        width: 100%;
+    }
+}
