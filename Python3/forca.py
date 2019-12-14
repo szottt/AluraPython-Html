@@ -3,7 +3,7 @@ import random
 
 def play():
 
-    
+
     print_opening_message()
     secret_word = carry_secret_word()
     right_letters = initialize_hit_letters(secret_word)
