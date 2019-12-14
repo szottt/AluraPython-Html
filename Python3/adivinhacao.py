@@ -47,7 +47,7 @@ def play():
 
 
     #attemp = int(input('Em quantas tentativas voce pode nos responder: '))
-    print(secret_number)
+    #print(secret_number)
 
 
     while(round <= attemp):
