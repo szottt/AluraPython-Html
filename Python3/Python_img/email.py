@@ -23,7 +23,7 @@ server.login(email_from, email_senha)
 msg = "TEste"
 
 #envia email
-
+    
 server.sendmail(email_from,email_to,msg)
 
 #fecha conexao
