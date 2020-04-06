@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 
-CONVIDADOS = ["Eduardo Castilho", "Marcela Mendes", "Igor Szot"]
+CONVIDADOS = ["Eduardo Castilho", "Marcela Mendes", "Igor Szot", "Hugo Szot"]
 
 LEFT_BORDER = 300
 #font1 = ImageFont.truetype("./font1.tff", size=60)
