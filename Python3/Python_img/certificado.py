@@ -1,14 +1,14 @@
 from PIL import Image, ImageDraw, ImageFont
 
-CONVIDADOS = ["Eduardo Castilho", "Marcela Mendes"]
+CONVIDADOS = ["Eduardo Castilho", "Marcela Mendes", "Igor Szot"]
 
 LEFT_BORDER = 300
 #font1 = ImageFont.truetype("./font1.tff", size=60)
-font1 = ImageFont.truetype("/home/vkn/Documentos/Cursos/CursosAlura/Python3/Python_img/font1.ttf", size=60)
-font2 = ImageFont.truetype("/home/vkn/Documentos/Cursos/CursosAlura/Python3/Python_img/font2.ttf", size=50)
+font1 = ImageFont.truetype(r"C:\Users\Igor Szot\Documents\Cursos\CursosAlura\Python3\Python_img\font1.ttf", size=60)
+font2 = ImageFont.truetype(r"C:\Users\Igor Szot\Documents\Cursos\CursosAlura\Python3\Python_img\font1.ttf", size=50)
 
 for convidado in CONVIDADOS:
-    imagem = Image.open("/home/vkn/Documentos/Cursos/CursosAlura/Python3/Python_img/certificado.jpg").convert("RGBA")
+    imagem = Image.open(r"C:\Users\Igor Szot\Documents\Cursos\CursosAlura\Python3\Python_img\certificado.jpg").convert("RGBA")
 
     lapis = ImageDraw.Draw(imagem)
 
@@ -27,4 +27,4 @@ for convidado in CONVIDADOS:
 
     lapis.text((LEFT_BORDER, 760), text="Abraços!", fill="#000", font=font2)
 
-    imagem.save(f"/home/vkn/Documentos/Cursos/CursosAlura/Python3/Python_img/convite_{convidado}.png")
+    imagem.save(r"C:\Users\Igor Szot\Documents\Cursos\CursosAlura\Python3\Python_img\convite_{}.png".format(convidado))
