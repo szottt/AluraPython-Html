@@ -13,7 +13,7 @@ class Cpf:
             validador = CPF()
             return validador.validate(cpf)
         else:
-            raise ValueError ('Quantidade de Digitos Invalida!!')
+            raise ValueError ('Quantidade de Digitos Invalida!!!')
 
     def format_cpf(self):
         mascara = CPF()
