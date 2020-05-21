@@ -13,5 +13,14 @@ argumento = 'https://www.bytebank.com.br/cambio?moedaorigem=real'
 listaargumento = argumento.split('=')
 print(listaargumento)'''
 
-url = 'https://www.bytebank.com.br/cambio?moedaorigem=real'
-print(ExtratorArgumentosUrl.urlEhValida(url))
+#https://www.bytebank.com.br/cambio?moedaorigem=real&moedadestino=dolar&valor=700
+
+url = 'moedaorigem=real&moedadestino=dolar'
+
+argumentosUrl = ExtratorArgumentosUrl(url)
+
+moedaOrigem, moedaDestino = argumentosUrl.extraiArgumentos()
+print(moedaDestino, moedaOrigem)
+
+
+ExtratorArgumentosUrl.urlEhValida("a")
